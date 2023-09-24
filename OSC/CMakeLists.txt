@@ -9,14 +9,7 @@ if (POLICY CMP0141)
   set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
 endif()
 
-project ("WCG")
+project ("OSC")
 
 # Schließen Sie Unterprojekte ein.
-
-add_subdirectory("OSC")
-
-
-
-add_subdirectory ("WCG/src")
-
-target_include_directories(WCG PRIVATE OSC/OSC/inc)
+add_subdirectory ("OSC")
