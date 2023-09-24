@@ -1,3 +1,5 @@
+#CMake File for creating a library
+
 # Füge alle Header-Dateien im "inc"-Verzeichnis hinzu
 file(GLOB HEADER_FILES "inc/*.h")
 
